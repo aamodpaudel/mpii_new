@@ -1,0 +1,13 @@
+seed: 42
+data_root: d:/mpii/MPIIGaze/Data/Normalized
+holdout_subject: p14
+batch_size: 256
+num_workers: 4
+epochs: 30
+lr: 0.0005
+weight_decay: 0.0001
+save_dir: runs/mpii_baseline
+image_height: 36
+image_width: 60
+hidden_dim: 256
+use_amp: true
