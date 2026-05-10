@@ -1,0 +1,25 @@
+seed: 42
+data_root: d:/mpii/MPIIGaze/Data/Normalized
+holdout_subject: p14
+batch_size: 256
+num_workers: 4
+epochs: 15
+lr: 0.0002
+weight_decay: 0.0001
+save_dir: runs/mpii_ft_tuned
+image_height: 36
+image_width: 60
+hidden_dim: 128
+use_amp: true
+
+# regularization / generalization
+aug_noise_std: 0.02
+aug_brightness: 0.12
+aug_contrast: 0.20
+
+# transfer learning schedule
+freeze_eye_epochs: 3
+
+# early stopping
+early_stopping_patience: 4
+early_stopping_min_delta: 0.02
